@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #202E38;
+}
+
+/* ....................border background-colors..........................
+   background: linear-gradient(to bottom right, #f3f9a6 0%, #cbc634 100%); /gold/
+
+   background: linear-gradient(to bottom right, #58ac30 0%, #a7df62 100%); /serene/
+
+   background: linear-gradient(to bottom right, #37cfdc 0%, #5a88e5 100%); /ocean/
+
+   background: linear-gradient(to bottom right, #ff616d 0%, #ffc171 100%); /sunset/
+*/
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 100px); /*create 9 columns making them all 100px in width*/
+    grid-template-rows: repeat(4, 100px); /*create 4 rows, 100px tall in height*/
+    grid-gap: 10px;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+}
+.heading {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+.heading h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.heading h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+/* #grid-container div {
+    border: 1px solid black;
+} */
+
+#grid-container .funstuff {
+    background: linear-gradient(to bottom right, #ff616d 0%, #ffc171 100%);
+}
+
+#grid-container .gold {
+    background: linear-gradient(to bottom right, #f3f9a6 0%, #cbc634 100%);
+}
+
+#grid-container .serene {
+    background: linear-gradient(to bottom right, #58ac30 0%, #a7df62 100%);
+}
+
+#grid-container .ocean {
+    background: linear-gradient(to bottom right, #37cfdc 0%, #5a88e5 100%);
+}
+
+.imp {
+    border: none !important;
+    background: none !important;
+}
+
+.gold .title, .gold .description {
+    background: linear-gradient(to bottom right, #f3f9a6 0%, #cbc634 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.serene .title, .serene .description {
+    background: linear-gradient(to bottom right, #58ac30 0%, #a7df62 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ocean .title, .ocean .description {
+    background: linear-gradient(to bottom right, #37cfdc 0%, #5a88e5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.funstuff .title, .funstuff .description {
+    background: linear-gradient(to bottom right, #ff616d 0%, #ffc171 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 34px;
+    font-family: "Poppins", sans-serif;
+    margin: 0.3em 0 0;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    margin-top: -0.2em;
+}
+
+.element-wrapper-inner {
+    background: #202e38;
+    padding: 5px 10px;
+    width: calc(100px - 30px);
+    height: calc(100px - 20px);
+    margin: 5px;
+}
